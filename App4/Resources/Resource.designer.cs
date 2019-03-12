@@ -2516,6 +2516,9 @@ namespace App4
 			// aapt resource value: 0x7f08007e
 			public const int edit_query = 2131230846;
 			
+			// aapt resource value: 0x7f0800b2
+			public const int emailImageView = 2131230898;
+			
 			// aapt resource value: 0x7f080030
 			public const int end = 2131230768;
 			
@@ -2600,8 +2603,8 @@ namespace App4
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800b2
-			public const int masked = 2131230898;
+			// aapt resource value: 0x7f0800b4
+			public const int masked = 2131230900;
 			
 			// aapt resource value: 0x7f0800a1
 			public const int media_actions = 2131230881;
@@ -2650,6 +2653,9 @@ namespace App4
 			
 			// aapt resource value: 0x7f08000b
 			public const int parent_matrix = 2131230731;
+			
+			// aapt resource value: 0x7f0800b1
+			public const int phoneImageView = 2131230897;
 			
 			// aapt resource value: 0x7f0800b0
 			public const int phoneNumberTextView = 2131230896;
@@ -2861,8 +2867,8 @@ namespace App4
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800b1
-			public const int visible = 2131230897;
+			// aapt resource value: 0x7f0800b3
+			public const int visible = 2131230899;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;

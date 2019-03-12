@@ -28,10 +28,28 @@ namespace App4.Adapters
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
+            ContactViewHolder viewHolder = null;
+
             if (convertView == null)
             {
-                //convertView = this.parent.LayoutInflater.Inflate()
+                convertView = this.parent.LayoutInflater.Inflate(Resource.Layout.view_contact, null);
+
+                viewHolder = new ContactViewHolder();
+                viewHolder.NameTextView = convertView.FindViewById<TextView>(Resource.Id.nameTextView);
+                viewHolder.PhoneNumberTextView = convertView.FindViewById<TextView>(Resource.Id.phoneNumberTextView);
+                viewHolder.EmailImageView = convertView.FindViewById<ImageView>(Resource.Id.emailImageView);
+                viewHolder.PhoneImageView = convertView.FindViewById<ImageView>(Resource.Id.phoneImageView);
+
+                convertView.Tag = viewHolder;
             }
+
+            if (viewHolder == null)
+                viewHolder = convertView.Tag as ContactViewHolder;
+
+            var contact = contacts[position];
+
+            viewHolder.NameTextView.Text = contact.Name;
+            viewHolder.PhoneNumberTextView.Text = contact.PhoneNumber;
 
             return convertView;
         }
